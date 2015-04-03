@@ -1,0 +1,19 @@
+".container": {
+	backgroundColor: "white"
+},
+"#view2": {
+	height : Ti.UI.SIZE,
+	layout : 'horizontal'
+},
+"#star": {
+	color : '#ffffff',
+	font : {
+		fontFamily : 'Helvetica Neue LT Std',
+		fontSize : '18dp'
+	},
+	text : ' *'
+},
+"#blankSpace": {
+	top : '10dp',
+	height : '10dp'
+}
