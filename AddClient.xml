@@ -1,0 +1,52 @@
+<Alloy>
+	<Window class="container" id = "addClientWin" title = "Add Client" barColor="#F0FFFF">
+				
+		<ScrollView id = "containerView" class = "addBaseView">
+			<View id = "view2">
+				<Label class = "labels">Client Name</Label>
+				<Label id = "star"></Label>				
+			</View>
+			<TextField id = "nameField" class = "textFields"></TextField>
+			
+			<View id = "view2">
+				<Label class = "labels">Company Name</Label>
+				<Label id = "star"></Label>
+			</View>
+			<TextField id = "comNameField" class = "textFields"></TextField>
+			
+			<View id = "view2">
+				<Label class = "labels">Mobile Number</Label>
+				<Label id = "star"></Label>
+			</View>
+			<TextField id = "numField" class = "textFields" hintText = "987-654-3210"></TextField>
+			
+			<Label class = "labels">Phone Number </Label>
+			<TextField id = "phoneField" class = "textFields" hintText = "9876543210"></TextField>
+			
+			<View id = "view2">
+				<Label class = "labels">Email</Label>
+				<Label id = "star"></Label>
+			</View>
+			<TextField id = "emailField" class = "textFields" hintText = "abc@abc.com"></TextField>
+			
+			<Label class = "labels">Street </Label>
+			<TextField id = "streetField" class = "textFields"></TextField>
+			
+			<Label class = "labels">City </Label>
+			<TextField id = "cityField" class = "textFields"></TextField>
+			
+			<Label class = "labels">Country </Label>
+			<TextField id = "countryField" class = "textFields"></TextField>
+			
+			<View id = "blankSpace"></View>
+						
+		</ScrollView>
+		<Button id = "clientDel" class = "btnDelete" onClick = "clientDelListener" visible = false>Delete Client</Button>
+		<RightNavButton>
+			<Button id = "btnSaveClient" class = "btnSave" onClick = "btnSaveListener"></Button>
+		</RightNavButton>
+		<LeftNavButton>
+			<Button id = "btnBackAddClient" class = "btnBack" onClick = "addClientBackListener"></Button>
+		</LeftNavButton>
+	</Window>
+</Alloy>
