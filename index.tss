@@ -1,0 +1,43 @@
+"winhome": {
+	opacity:0.92,
+	titleAttributes:  {
+        color:'blue'               
+   },   
+   backgroundColor:'#fff',  
+   url: "supportUrl.js",
+   tabBarHidden: true,
+   backButtonTitleImage:'/images/back.png'
+},
+// "#image":{
+	// image:"./images/viewCategory.png",
+	// // width:'50%',
+	// // height:'50%',
+	// // top:0
+// },
+"#mainview":{
+	borderRadius:"10",
+	backgroundColor:"red",
+	width:"95%", 
+	height:"45%",
+	top:'5%'
+},
+".maintableview":{
+	style:Titanium.UI.iPhone.TableViewStyleGROUPED
+},
+"#tableview":{
+	width:"100%", 
+	height:"100%"
+},
+"#innerwin":{
+	titleAttributes:  {
+        color:'black',
+        font: {fontSize:24},
+        shadow:{color:'white', offset:{width:1,height:1}}
+    }
+},
+"#leftbtn":{
+	borderRadius:10,	
+	backgroundImage:"/images/settings.png",	
+	backgroundColor:"#800000"	
+}
+
