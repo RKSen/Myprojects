@@ -1,0 +1,42 @@
+"#winAddProduct":{	
+	//layout:'vertical',
+	titleAttributes:  {
+        color:'black',
+        font: {fontSize:24},
+        shadow:{color:'white', offset:{width:1,height:1}}
+    }
+},
+"#horizontalView": {
+	height : '150dp'
+	//borderColor : '#fff'
+},
+"#ProductImgView": {
+	backgroundColor:'#ffffff',
+	borderRadius:10,
+    top : "45dp",
+    height : "100dp",
+    width : "145dp",
+    left : '20dp'
+},
+"#SelectBTN": {
+    top : "45dp",
+    height : "40dp",
+    width : "95dp",
+    right : '15dp',
+    backgroundColor:'#ffffff',
+	borderRadius:10,
+	color:'#800000'
+},
+"#RemoveBTN": {
+    top : "100dp",
+    height : "40dp",
+    width : "95dp",
+    right : '15dp',
+    backgroundColor:'#ffffff',
+	borderRadius:10,
+	color:'#800000'
+},
+"#blankSpace": {
+	top : '10dp',
+	height : '10dp'
+}
