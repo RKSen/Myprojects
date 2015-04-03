@@ -1,0 +1,30 @@
+exports.definition = {
+	config: {
+		 columns : {
+            "CategoryID"	: "INTEGER PRIMARY KEY AUTOINCREMENT",
+            "CategoryName"  : "TEXT",
+            "CategoryDate"	: "DATE",
+            "CategoryDescription"	: "TEXT"
+        },
+		adapter: {
+			type: "sql",
+			db_file: "/dbs/InventoryDB.sqlite",
+			collection_name: "Category",
+			idAttribute : "CategoryID"
+		}
+	},
+	extendModel: function(Model) {
+		_.extend(Model.prototype, {
+			// extended functions and properties go here
+		});
+
+		return Model;
+	},
+	extendCollection: function(Collection) {
+		_.extend(Collection.prototype, {
+			// extended functions and properties go here
+		});
+
+		return Collection;
+	}
+};
