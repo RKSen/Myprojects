@@ -1,0 +1,21 @@
+<Alloy>	
+    <NavigationWindow id="winhome" platform="ios" >
+        <Window id="innerwin" title="Inventory Manager" barColor="#F0FFFF" backgroundColor='#F0FFFF	'>
+        	
+        	<LeftNavButton>
+        		   <Button id="leftbtn" onClick="openSettingsPopup"></Button>                   
+             </LeftNavButton>
+        	
+        	<View id="mainview" >
+        	 <TableView id="tableview" class="maintableview" backgroundColor="#800000">
+	                <TableViewRow id="rowclient" title="Client" hasChild=true onClick="openClientWindow" color="#FFFAF0" backgroundColor="#800000" leftImage="/images/viewClient.png" selectedBackgroundColor="#808080"/>
+	                <TableViewRow id="rowcategory" title="Category" hasChild=true onClick="openCategoryWindow" color="#FFFAF0" backgroundColor="#800000" leftImage="/images/viewCategory.png" selectedBackgroundColor="#808080"/>   
+	                <TableViewRow id="rowProduct" title="Product" hasChild=true onClick="openProductWindow" color="#FFFAF0" backgroundColor="#800000" leftImage="/images/viewProducts.png" selectedBackgroundColor="#808080"/>
+	                <TableViewRow id="rowtransaction" title="Transaction" hasChild=true onClick="openTransactionWindow" color="#FFFAF0" backgroundColor="#800000" leftImage="/images/viewTransaction.png" selectedBackgroundColor="#808080"/>	       
+	         		<TableViewRow id="rowaboutus" title="About us" hasChild=true onClick="openTransactionWindow" color="#FFFAF0" backgroundColor="#800000" leftImage="/images/infobtn.png" selectedBackgroundColor="#808080"/>
+	
+	         </TableView>
+	         </View>
+        </Window>
+    </NavigationWindow>    
+</Alloy>
