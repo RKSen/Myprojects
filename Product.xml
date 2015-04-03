@@ -1,0 +1,38 @@
+<Alloy>
+	<Window id="winAddProduct" title="Add Product" backgroundColor="white" barColor="#F0FFFF" >
+        <!-- Add the category code here -->
+         <LeftNavButton>
+        	   <Button id="Backbtn" onClick="onBackBTNClick" class = "btnBack"></Button>                   
+        </LeftNavButton>
+        <ScrollView id ="AddProductScrollView" class = "addBaseView">
+        	<View id="horizontalView">
+		        <Label id = "ProductImageLBL" class = "labels" text = "Product Image"></Label>
+		        <ImageView id = 'ProductImgView'></ImageView>
+		        <Button id = "SelectBTN" title = "Select"></Button>
+		        <Button id = "RemoveBTN" title = "Remove"></Button>
+	        </View>
+	        
+	        <Label id = "DateLabel" class = "labels" text = "Date"></Label>
+	        <TextField id = "DateTF" onClick="openDatePicker" class = "textFields"></TextField>
+	        
+	        <Label id = "ProductLabel" class = "labels" text = "Product Name *"></Label>
+	        <TextField id = "ProductTF" class = "textFields"></TextField>
+	        
+	       	<Label id = "ProductCodeLabel" class = "labels" text = "Product Code *"></Label>
+	        <TextField id = "ProductCodeTF" class = "textFields"></TextField>
+	        
+	        <Label id = "ProductCategoryLabel" class = "labels" text = "Product Category"></Label>
+			<Button id = "ProductCatrgoryTF" class = "textFields" text="Select Category" onClick="selectCategoryListener"></Button>
+			
+			<View id = "blankSpace"></View>
+		</ScrollView>
+		<Button id = "productDel" class = "btnDelete" onClick = "productDelListener" visible=false>Delete Product</Button>
+		
+		<TableView id="catPicker" visible=false dataCollection="category" onClick = "categorySelListener">
+			<Require src="ShowPicker"/>
+		</TableView>
+		<RightNavButton>
+        	<Button id = 'AddBtn' onClick="onClickAddBtn" class = "btnSave"></Button>                   
+		</RightNavButton>
+    </Window>
+</Alloy>
